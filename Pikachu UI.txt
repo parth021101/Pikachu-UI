@@ -1,0 +1,18 @@
+Pikachu UI
+
+- Header
+1. Pokémon Logo 
+2. Menu Icon
+
+- main
+1. left Part
+- label -> font-family: "Montserrat", sans-serif;
+- Main Heading -> font-family: "Nunito", sans-serif;
+- Paragraph -> font-family: "Inter", sans-serif;
+- Page numbers -> font-family: "Inter", sans-serif;
+2. Right Part
+- page indicator
+
+
+Bootstrap Icon's CDN -><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+1. Menu Icon -> <i class="bi bi-list"></i>

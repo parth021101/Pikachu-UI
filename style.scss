@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+// color
+$yellow: #fbc50b;
+$cream: #fbe8b3;
+$black: #000;
+
+// Fonts
+$font-heading: "Google Sans Flex", sans-serif;
+$font-label: "Montserrat", sans-serif;
+$font-body: "Inter", sans-serif;
+$font-counter: "Inter", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  header {
+    .nav-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 48px;
+
+      .logo {
+        width: 120px;
+      }
+
+      #menuIcon {
+        font-size: 2.8rem;
+        cursor: pointer;
+        color: $black;
+      }
+    }
+  }
+
+  .left-panel {
+    width: 60%;
+    height: 100%;
+    background-color: $yellow;
+    position: relative;
+
+    .content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .label {
+        font-family: $font-label;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+
+      .heading {
+        font-family: $font-heading;
+        font-weight: 600;
+        font-size: 9.5rem;
+        line-height: 1;
+        letter-spacing: 5px;
+        text-transform: capitalize;
+      }
+      .description {
+        font-family: $font-body;
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 470px;
+        line-height: 1.6;
+        letter-spacing: 1px;
+      }
+      .counter {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .line {
+          display: block;
+          width: 32px;
+          height: 2px;
+          background-color: $black;
+        }
+
+        .number {
+          font-family: $font-counter;
+          font-weight: 700;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .right-panel {
+    width: 40%;
+    height: 100%;
+    background-color: $cream;
+  }
+
+  .pikachu {
+    position: absolute;
+    width: 35%;
+    right: 18%;
+    top: 52%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+  .pokeball {
+    position: absolute;
+    bottom: -67px;
+    left: 20px;
+    width: 200px;
+    z-index: 0;
+    opacity: 0.1;
+  }
+  .dots {
+    position: absolute;
+    right: 35px;
+    top: 55%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 10;
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: #fbc40d;
+    }
+    .active {
+      width: 10px;
+      height: 10px;
+      background: $black;
+    }
+  }
+}
