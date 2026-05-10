@@ -20,5 +20,5 @@ A pixel-perfect frontend clone of a Pokémon Gen I showcase page, built with van
 * Pinterest — reference image for the UI design
 * Claude — helped with SCSS variables
 
-Explore the live version of the Shinsei Village Landing Page here:
+Explore the live version of the Pokémon UI Landing Page here:
 [pikachuui.netlify.app](https://pikachuui.netlify.app/)
